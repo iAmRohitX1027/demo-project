@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Lock Screen -->
+    <div id="lockScreen" class="screen active">
+        <div class="lock-container">
+            <div class="lock-icon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h1 class="lock-title">Enter Your Love Name ❤️</h1>
+            <p class="lock-subtitle">Only one name can unlock our story</p>
+            <div class="input-container">
+                <input type="text" id="nameInput" placeholder="Type your special name here...">
+                <button id="unlockBtn">
+                    <i class="fas fa-unlock-alt"></i> Unlock Our Story
+                </button>
+            </div>
+            <p id="errorMsg" class="error-message"></p>
+            <div class="hint">Hint: It's what I call you with love</div>
+        </div>
+        <div class="cinematic-overlay"></div>
+    </div>
+
+    <!-- Main Cinematic Scene -->
+    <div id="mainScene" class="screen">
+        <!-- Cinematic Overlay -->
+        <div class="vignette"></div>
+        <div class="particles"></div>
+        
+        <!-- Rotating Photo Circle -->
+        <div class="photo-circle-container">
+            <div id="photoCircle" class="photo-circle">
+                <!-- Photos will be dynamically added by JavaScript -->
+            </div>
+            
+            <!-- Center Content -->
+            <div class="center-content">
+                <div class="heart-pulse">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h1 class="love-text">I LOVE YOU <span class="heart">❤️</span></h1>
+                <p class="couple-name">Meri Sweetheart ji ❤️</p>
+            </div>
+        </div>
+        
+        <!-- Romantic Story -->
+        <div class="story-container">
+            <div class="story-text">
+                <i class="fas fa-quote-left"></i>
+                Every moment with you feels like a beautiful movie 🎬
+                <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="story-line"></div>
+        </div>
+        
+        <!-- Proposal Button -->
+        <div class="proposal-container">
+            <button id="proposalBtn" class="proposal-btn">
+                <span class="btn-text">Will You Be Mine Forever?</span>
+                <span class="btn-ring">💍</span>
+            </button>
+            <p class="final-note">This is our story, our movie, our forever...</p>
+        </div>
+        
+        <!-- Music Control -->
+        <div class="music-control">
+            <button id="musicToggle" class="music-btn">
+                <i class="fas fa-music"></i>
+                <span id="musicText">Music On</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="bgMusic" loop>
+        <source src="audio/romantic-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
